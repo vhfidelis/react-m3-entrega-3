@@ -1,0 +1,16 @@
+@import url(../../../styles/Buttons.scss);
+.pwd__container {
+	position: relative;
+	display: flex;
+}
+
+.ico {
+	position: absolute;
+	right: 10px;
+	top: 53%;
+	color: var(--gray-1);
+}
+
+.login__btn {
+	margin-top: 10px;
+}

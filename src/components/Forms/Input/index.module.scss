@@ -1,0 +1,32 @@
+@import url(../../../styles/GlobalStyles.scss);
+.container {
+	display: flex;
+	height: clamp(5.3rem, 1.338rem + 19.81vw, 6.6rem);
+	padding: 0.7rem 0rem;
+	flex-direction: column;
+	justify-content: center;
+	gap: clamp(1.1rem, 0.186rem + 4.571vw, 1.4rem);
+	position: relative;
+
+	& input {
+		display: flex;
+		width: clamp(16.5rem, 4.123rem + 61.887vw, 20.6rem);
+		height: clamp(2.4rem, 0.571rem + 9.143vw, 3rem);
+		align-items: center;
+		padding: 0.5rem;
+		gap: 8.143px;
+		flex-shrink: 0;
+		border-radius: 3.2px;
+		color: var(--gray-1);
+		border: 0.977px solid var(--gray-2);
+		background: var(--gray-2);
+		transition: width ease-in-out 500ms;
+	}
+	& input:focus {
+		color: var(--gray-0);
+		border: 0.977px solid var(--gray-0);
+	}
+	input::placeholder {
+		color: var(--gray-0);
+	}
+}

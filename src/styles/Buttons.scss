@@ -1,0 +1,70 @@
+@import url(./GlobalStyles.scss);
+@mixin btn($height: 3rem, $color: var(--color-primary), $size: 1rem) {
+	display: inline-flex;
+	height: clamp(2.5rem, 0.991rem + 7.547vw, 3rem);
+	width: 100%;
+	padding: 0rem 1.4rem;
+	justify-content: center;
+	align-items: center;
+	gap: 0.6rem;
+	flex-shrink: 0;
+	border-radius: 0.25rem;
+	border: 1.2px solid $color;
+	background: $color;
+	color: var(--gray-0);
+	font-family: var(--font);
+	font-size: clamp(0.75rem, -0.005rem + 3.774vw, 1rem);
+	font-weight: 500;
+	line-height: 1.65rem;
+	transition: height ease-in-out 500ms, font-size ease-in-out 500ms;
+}
+
+.btn {
+	@include btn($height: 2.5rem, $size: 0.75rem);
+}
+.btn:hover {
+	@include btn(
+		$height: 2.5rem,
+		$size: 0.75rem,
+		$color: var(--color-primary-focus)
+	);
+}
+.btn_negative {
+	@include btn(
+		$height: 2.5rem,
+		$size: 0.75rem,
+		$color: var(--color-primary-negative)
+	);
+}
+
+.btn_disable {
+	@include btn($height: 2.5rem, $size: 0.75rem, $color: var(--gray-1));
+}
+.btn_return {
+	@include btn($height: 2.5rem, $size: 0.75rem, $color: var(--gray-3));
+}
+.btn_return:hover {
+	@include btn($height: 2.5rem, $size: 0.75rem, $color: var(--gray-2));
+}
+.btn_disable:hover {
+	@include btn($height: 2.5rem, $size: 0.75rem, $color: var(--gray-2));
+}
+
+// @media screen and (min-width: 426px) {
+// 	.btn {
+// 		@include btn();
+// 	}
+// 	.btn:hover {
+// 		@include btn($color: var(--color-primary-focus));
+// 	}
+// 	.btn_negative {
+// 		@include btn($color: var(--color-primary-negative));
+// 	}
+
+// 	.btn_disable {
+// 		@include btn($color: var(--gray-1));
+// 	}
+// 	.btn_disable:hover {
+// 		@include btn($color: var(--gray-2));
+// 	}
+// }

@@ -1,0 +1,65 @@
+@import url(./GlobalStyles.scss);
+
+%default {
+	font-family: var(--font);
+	color: var(--gray-0);
+	transition: font-size ease-in-out 500ms;
+}
+
+.title1 {
+	@extend %default;
+	font-size: var(--font-clamp0);
+	font-weight: 700;
+	line-height: 1.8rem;
+}
+
+.title2 {
+	@extend %default;
+	font-size: var(--font-clamp1);
+	font-weight: 600;
+	line-height: 1.65rem;
+}
+
+.headline {
+	@extend %default;
+	font-size: var(--font-clamp2);
+	color: var(--gray-1);
+	font-weight: 400;
+	line-height: 1.4rem;
+	&.bold {
+		font-weight: 600;
+		line-height: 1.15rem;
+	}
+}
+
+.paragraph {
+	@extend %default;
+	font-size: var(--font-clamp1);
+	font-weight: 400;
+	line-height: 1.15rem;
+}
+
+.logo {
+	width: clamp(6.313rem, -1.801rem + 40.566vw, 9rem);
+	height: clamp(0.875rem, -0.257rem + 5.66vw, 1.25rem);
+	transition:
+		width ease-in-out 500ms,
+		height ease-in-out 500ms;
+	flex-shrink: 0;
+}
+.help {
+	position: absolute;
+	bottom: 0;
+	color: var(--gray-1);
+	font-family: var(--font);
+	font-size: var(--font-clamp2);
+	line-height: 0rem;
+}
+.label {
+	color: var(--gray-0);
+	font-family: var(--font);
+	font-size: var(--font-clamp2);
+	line-height: 0rem;
+	font-weight: 400;
+	transition: font-size ease-in-out 500ms;
+}

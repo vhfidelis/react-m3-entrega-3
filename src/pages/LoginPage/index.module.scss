@@ -1,0 +1,36 @@
+@import url(../../styles/GlobalStyles.scss);
+body {
+	background-color: var(--gray-4);
+}
+.container {
+	display: flex;
+	width: 100vw;
+	padding: 3rem 0.75rem 2.875rem 0.75rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: clamp(1.2rem, -1.819rem + 15.094vw, 2.2rem);
+	border-radius: 0.5rem;
+	background: var(--gray-4);
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.inner__container {
+	display: flex;
+	padding: clamp(2.1rem, 0.591rem + 7.547vw, 2.6rem)
+		clamp(1.1rem, 0.27rem + 4.151vw, 1.375rem);
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(1.1rem, 0.194rem + 4.528vw, 1.4rem);
+	border-radius: 0.2rem;
+	background: var(--gray-3);
+	box-shadow: 0px 3.2px 32px -8px rgba(0, 0, 0, 0.25);
+}
+.toast-message {
+	background: darkblue;
+	color: #fff;
+	font-size: 20px;
+	width: 34vw;
+	padding: 30px 20px;
+}

@@ -1,0 +1,21 @@
+@import url(./Reset.scss);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+	--color-primary: #ff577f;
+	--color-primary-focus: #ff427f;
+	--color-primary-negative: #59323f;
+	--gray-0: #f8f9fa;
+	--gray-1: #868e96;
+	--gray-2: #343b41;
+	--gray-3: #212529;
+	--gray-4: #121214;
+	--toastify-color-success: #3fe864;
+	--toastify-color-error: #e83f5b;
+	--toastify-color-light: var(--gray-2);
+	--toastify-text-color-light: var(--gray-0);
+	--toastify-font-family: Inter;
+	--font: Inter;
+	--font-clamp0: clamp(0.9rem, 0.221rem + 3.396vw, 1.125rem);
+	--font-clamp1: clamp(0.8rem, 0.196rem + 3.019vw, 1rem);
+	--font-clamp2: clamp(0.6rem, 0.147rem + 2.264vw, 0.75rem);
+}
